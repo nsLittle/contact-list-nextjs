@@ -1,6 +1,4 @@
 body {
-  /* background-color: black; */
-  /* font-family: "Orbitron, sans serif"; */
   font-family: sans-serif;
 }
 
@@ -12,7 +10,6 @@ nav {
 }
 
 .routes {
-  /* color: rgb(161, 47, 47); */
   color: blue;
   font-size: 24px;
   text-decoration: none;
@@ -64,19 +61,17 @@ h3 {
 .contact-data-container {
   background-color: rgb(211, 215, 219);
   width: 1000px;
-  /* margin-left: 50px; */
-  margin-left: 50px;
   margin-bottom: 50px;
   padding-top: 50px;
-  padding-right: 50px;
+  padding-bottom: 50px;
 }
 
 .contact-data {
   font-family: sans-serif;
   /* color: rgb(53, 53, 138); */
-  font-size: 24px;
+  font-size: 22px;
   display: flex;
-  width: 800px;
+  width: 900px;
   justify-content: center;
   justify-content: space-between;
   margin-left: 100px;
@@ -84,17 +79,13 @@ h3 {
 }
 
 .contact-data-url {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 33px;
-}
-.contact-data-info-container {
-  margin-top: 200px;
-  margin-bottom: 250px;
-  /* margin-left: 25px;
-  font-weight: bold; */
+  margin-top: 20px;
 }
 
+.contact-data-delete,
 .contact-data-edit {
   font-size: 12px;
   margin-top: 25px;
@@ -102,9 +93,23 @@ h3 {
   background-color: none;
 }
 
+.contact-individual {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.contact-individual-data {
+  font-size: 22px;
+  margin-top: 75px;
+  margin-left: 35px;
+}
+.contact-individual-url {
+  height: 500px;
+  width: auto;
+}
+
 .button {
-  /* width: 200px;
-  height: 35px; */
   background-color: #0d6efd;
   color: white;
   font-family: "Orbitron, sans serif";
@@ -121,6 +126,18 @@ h3 {
 
 .button-submit-add-bar {
   text-align: center;
+}
+
+.button-delete {
+  background-color: rgb(211, 215, 219);
+  font-family: sans-serif;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+  width: 75px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .button-edit {
