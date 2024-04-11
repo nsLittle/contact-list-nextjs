@@ -1,16 +1,8 @@
 "use client";
 import React from "react";
-import PropTypes from "prop-types";
 import Link from "next/link";
 
-AllContactsList.prototype = {
-  name: PropTypes.string,
-  url: PropTypes.string,
-  email: PropTypes.string,
-  phone: PropTypes.string,
-};
-
-export default function AllContactsList({ contacts }) {
+export default function AllContactsList({ contacts, Contacts }) {
   const handleEdit = () => {
     alert("Edit button forthcoming.");
   };

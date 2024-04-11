@@ -1,12 +1,12 @@
-"use client";
 import React from "react";
-import "./globals.css";
+import Header from "../components/Header";
 import AllContacts from "./contacts/page";
 
-export default function LinkedEx() {
+export default function TypeX() {
   return (
-    <main>
+    <>
+      <Header />
       <AllContacts />
-    </main>
+    </>
   );
 }

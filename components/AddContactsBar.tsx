@@ -1,21 +1,14 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { useRouter } from "next/navigation";
 
-AddContactsBar.propTypes = {
-  name: PropTypes.string,
-  url: PropTypes.string,
-  email: PropTypes.string,
-  phone: PropTypes.string,
-};
-
-export default function AddContactsBar({ contacts, sortedContacts }) {
+export default function AddContactsBar({ contacts }) {
   interface Contacts {
     name: string;
     url: string;
     email: string;
     phone: string;
   }
+
   const [inputName, setInputName] = useState("");
   const [inputUrl, setInputUrl] = useState("");
   const [inputEmail, setInputEmail] = useState("");
@@ -43,7 +36,7 @@ export default function AddContactsBar({ contacts, sortedContacts }) {
   };
 
   const handleClickAdd = (event) => {
-    let newContact = {
+    let newContact: Contacts = {
       name: inputName,
       url: inputUrl,
       email: inputEmail,
@@ -60,8 +53,6 @@ export default function AddContactsBar({ contacts, sortedContacts }) {
       event.preventDefault();
     } else {
       contacts.push(newContact);
-      // contacts.push(newContact) works, but it doesn't render on home page
-      // contacts.push(newContact) pushes newContact to Data/page.js, but does not trigger resorting
       router.push("/contacts");
     }
   };

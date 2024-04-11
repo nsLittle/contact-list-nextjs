@@ -1,10 +1,17 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { contacts, sortedContacts } from "../Data/page";
+import { contacts, Contacts } from "../Data/page";
 import AllContactsList from "../../components/AllContactsList";
 import SearchBar from "../../components/SearchBar";
 import AddContactsButton from "../../components/AddContactsButton";
+
+export interface SortedContacts {
+  name: string;
+  url: string;
+  email: string;
+  phone: string;
+}
 
 export default function AllContacts() {
   return (

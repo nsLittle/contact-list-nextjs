@@ -37,6 +37,6 @@ export const contacts = [
 export interface SortedContacts {
   name: string;
   url: string;
-  emaail: string;
+  email: string;
   phone: string;
 }
