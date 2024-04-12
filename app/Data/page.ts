@@ -40,3 +40,7 @@ export interface SortedContacts {
   email: string;
   phone: string;
 }
+
+export const sortedContacts = contacts
+  .slice()
+  .sort((a, b) => a.name.localeCompare(b.name));

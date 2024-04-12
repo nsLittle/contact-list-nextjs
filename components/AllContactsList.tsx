@@ -2,7 +2,10 @@
 import React from "react";
 import Link from "next/link";
 
-export default function AllContactsList({ contacts, Contacts }) {
+export default function AllContactsList({
+  contacts = [],
+  // sortedContacts = [],
+}) {
   const handleEdit = () => {
     alert("Edit button forthcoming.");
   };
