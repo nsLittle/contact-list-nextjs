@@ -20,13 +20,12 @@ nav {
 h1 {
   font-family: sans-serif;
   color: rgb(53, 53, 138);
-  font-size: 86px;
+  font-size: 72px;
   text-align: center;
 }
 
 h2 {
   color: black;
-  /* color: rgb(122, 45, 45); */
   font-family: sans-serif;
   font-size: 48px;
   text-align: center;
@@ -70,7 +69,6 @@ h3 {
 
 .contact-data {
   font-family: sans-serif;
-  /* color: rgb(53, 53, 138); */
   font-size: 22px;
   display: flex;
   width: 900px;

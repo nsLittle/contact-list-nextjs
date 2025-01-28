@@ -4,7 +4,6 @@ import Link from "next/link";
 
 export default function AllContactsList({
   contacts = [],
-  // sortedContacts = [],
 }) {
   const handleEdit = () => {
     alert("Edit button forthcoming.");
@@ -25,10 +24,10 @@ export default function AllContactsList({
         <p className="contact-header-name">Name</p>
         <p>Email</p>
         <p>Phone</p>
+        {/* <p></p>
         <p></p>
         <p></p>
-        <p></p>
-        <p></p>
+        <p></p> */}
       </div>
 
       <div className="contact-data-container">

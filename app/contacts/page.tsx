@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { contacts, Contacts } from "../Data/page";
+import { contacts } from "../Data/page";
 import AllContactsList from "../../components/AllContactsList";
 import SearchBar from "../../components/SearchBar";
 import AddContactsButton from "../../components/AddContactsButton";

@@ -16,7 +16,7 @@ export const contacts = [
   },
   {
     name: "Marvin Minsky",
-    url: "https://cdn.technologyreview.com/i/images/minsky.obitx299.jpg",
+    url: "https://m.media-amazon.com/images/M/MV5BZGRhN2RlNWUtMmRjZi00ZmEyLWJlNzEtYTQ3OTg5ZmRjNjEwXkEyXkFqcGc@._V1_.jpg",
     email: "marvin.minksky@rolodex.com",
     phone: "802-888-7777",
   },
