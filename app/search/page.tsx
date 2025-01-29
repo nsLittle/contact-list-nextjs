@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import SearchBar from "../../components/SearchBar";
-import { contacts } from "../Data/page";
+import { contacts } from "../SeedData/contacts";
 
 export default function SearchContacts() {
   return (

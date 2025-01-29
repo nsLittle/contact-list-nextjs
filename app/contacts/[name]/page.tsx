@@ -2,8 +2,7 @@
 import React from "react";
 import { useParams } from "next/navigation";
 import Image from 'next/image';
-import { Contacts } from "../../Data/page";
-import { contacts } from "../../SeedData/contacts"; 
+import { Contacts, contacts } from "../../SeedData/contacts"; 
 
 export default function Individual() {
   interface Params {
@@ -11,12 +10,9 @@ export default function Individual() {
   }
 
   const rawName: Params = useParams();
-  let stringedName: string = rawName["name"];
-  const decodedName: string = stringedName
-    .toString()
-    .replace("%3A", "")
-    .replace("%20", " ");
-  const individualContact: Contacts = contacts.find(
+  let stringedName: string = rawName["name"] ?? "";
+  const decodedName: string = decodeURIComponent(stringedName);
+  const individualContact: Contacts | undefined = contacts.find(
     (contact) => contact.name.toLowerCase() === decodedName.toLowerCase()
   );
 
@@ -30,6 +26,8 @@ export default function Individual() {
             className="contact-individual-url"
             src={individualContact.url}
             alt={individualContact.name}
+            width={150}
+            height={150}
           />
           <div className="contact-individual-data">
             <p className="contact-individual-data">{individualContact.name}</p>
