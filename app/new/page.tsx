@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import AddContactsBar from "../../components/AddContactsBar";
-import { contacts } from "../Data/page";
+import { contacts } from "../SeedData/contacts";
 
 export default function AddNewContacts() {
   return (

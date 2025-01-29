@@ -2,7 +2,8 @@
 import React from "react";
 import { useParams } from "next/navigation";
 import Image from 'next/image';
-import { Contacts, contacts } from "../../Data/page";
+import { Contacts } from "../../Data/page";
+import { contacts } from "../../SeedData/contacts"; 
 
 export default function Individual() {
   interface Params {
