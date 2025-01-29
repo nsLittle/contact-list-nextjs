@@ -35,6 +35,8 @@ export default function AllContactsList({
                 className="contact-data-url"
                 src={contact.url}
                 alt={contact.name}
+                width={30}
+                height={30}
               />
             </Link>
             <p className="contact-data-info">
