@@ -1,7 +1,10 @@
-```markdown
 # Contact List - Next.js Application
 
 This project was created by **Mutsumi Hata**, a student at **Parsity**, an online software engineering program. This repository represents hands-on experience with **React**, **TypeScript**, and **Next.js**, focusing on building a functional contact management application. The project is a fork of a sample starter template, expanded and enhanced through independent development efforts.
+
+## 📢 About Parsity
+
+[Parsity](https://parsity.io/) is an online software engineering program designed to equip students with full-stack development skills. This project was completed as part of the curriculum, showcasing proficiency in modern web technologies.
 
 If you have any questions about this project or the Parsity program, visit [parsity.io](https://parsity.io/) or email **hello@parsity.io**.
 
@@ -81,16 +84,12 @@ To run this project locally, follow these steps:
 
 ---
 
-## 📢 About Parsity
+## 💡 Contact Me
 
-[Parsity](https://parsity.io/) is an online software engineering program designed to equip students with full-stack development skills. This project was completed as part of the curriculum, showcasing proficiency in modern web technologies.
+🔗 [GitHub](https://github.com/nsLittle)  
+🔗 [LinkedIn](https://www.linkedin.com/in/mutsumihata)  
 
-## 💡 Contact
-
-If you're interested in learning more about this project, collaborating, or discussing full-time opportunities, feel free to reach out:
-
-📧 Email: hata.mutsumi@gmail.com  
-🔗 GitHub: [github.com/nsLittle](https://github.com/nsLittle)
+Feel free to reach out for collaboration, job opportunities, or questions about my work!
 
 ---
 
