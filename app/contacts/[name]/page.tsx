@@ -2,7 +2,7 @@
 import React from "react";
 import { useParams } from "next/navigation";
 import Image from 'next/image';
-import { Contacts, contacts } from "../../SeedData/contacts"; 
+import { Contact, contacts } from "../../SeedData/contacts"; 
 
 export default function Individual() {
   interface Params {
@@ -12,7 +12,7 @@ export default function Individual() {
   const rawName: Params = useParams();
   let stringedName: string = rawName["name"] ?? "";
   const decodedName: string = decodeURIComponent(stringedName);
-  const individualContact: Contacts | undefined = contacts.find(
+  const individualContact: Contact | undefined = contacts.find(
     (contact) => contact.name.toLowerCase() === decodedName.toLowerCase()
   );
 
