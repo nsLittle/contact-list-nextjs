@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import AllContacts from "./contacts/page";
+import AllContacts from "./Data/page";
 
 export default function TypeX() {
   return (
