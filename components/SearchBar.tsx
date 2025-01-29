@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from 'next/image';
 import PropTypes from "prop-types";
 
 SearchBar.propTypes = {
@@ -49,7 +50,7 @@ export default function SearchBar({ contacts }) {
             Array.isArray(filteredData) &&
             filteredData.map((contact) => (
               <div className="search-result" key={contact.name}>
-                <img
+                <Image
                   className="search-result-url"
                   src={contact.url}
                   alt={contact.name}

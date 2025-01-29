@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function AllContactsList({
   contacts = [],
@@ -24,17 +25,13 @@ export default function AllContactsList({
         <p className="contact-header-name">Name</p>
         <p>Email</p>
         <p>Phone</p>
-        {/* <p></p>
-        <p></p>
-        <p></p>
-        <p></p> */}
       </div>
 
       <div className="contact-data-container">
         {sortedContacts.map((contact, index) => (
           <div className="contact-data" key={index}>
             <Link href={`/contacts${contact.name}`}>
-              <img
+              <Image
                 className="contact-data-url"
                 src={contact.url}
                 alt={contact.name}

@@ -16,7 +16,7 @@ export const contacts = [
   },
   {
     name: "Marvin Minsky",
-    url: "https://m.media-amazon.com/images/M/MV5BZGRhN2RlNWUtMmRjZi00ZmEyLWJlNzEtYTQ3OTg5ZmRjNjEwXkEyXkFqcGc@._V1_.jpg",
+    url: "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201601/MIT-Marvin-Minsky-02_0.jpg?itok=4FLPFYOT",
     email: "marvin.minksky@rolodex.com",
     phone: "802-888-7777",
   },

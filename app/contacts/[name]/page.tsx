@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useParams } from "next/navigation";
+import Image from 'next/image';
 import { Contacts, contacts } from "../../Data/page";
 
 export default function Individual() {
@@ -24,7 +25,7 @@ export default function Individual() {
 
       {individualContact ? (
         <div className="contact-individual" key={individualContact.name}>
-          <img
+          <Image
             className="contact-individual-url"
             src={individualContact.url}
             alt={individualContact.name}
