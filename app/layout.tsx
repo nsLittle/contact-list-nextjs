@@ -9,12 +9,7 @@ export default function Layout({ children }) {
   return (
     <>
       <html lang="en">
-        <body>
-          {children}
-          <Link className="routes" href="/contacts">
-            Home/Back
-          </Link>
-        </body>
+        <body>{children}</body>
       </html>
     </>
   );

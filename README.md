@@ -13,12 +13,14 @@ If you have any questions about this project or the Parsity program, visit [pars
 This **Next.js application** allows users to **store, add, and search through a list of contacts**, demonstrating fundamental **React Hooks**, **TypeScript**, and **Next.js routing** concepts.
 
 ### 🔹 Technologies Used
+
 - **Next.js**: Server-side rendering, routing, and optimized performance.
 - **React**: Modular and reusable component-based development.
 - **TypeScript**: Enforces type safety and helps catch errors during development.
 - **CSS**: Custom styling for layout and user experience improvements.
 
 ### 📌 Core Features
+
 - **Store & Manage Contacts**: Users can add, view, and search for contacts.
 - **Next.js Routing**: Implements dynamic routing for smooth navigation.
 - **React Context API**: Manages global state efficiently.
@@ -27,27 +29,36 @@ This **Next.js application** allows users to **store, add, and search through a 
 ## 🎯 Learning Objectives
 
 This project was built to deepen understanding of:
+
 - **React Hooks**: Implementation of `useContext()`, `useEffect()`, and prop drilling solutions.
 - **TypeScript Integration**: Exploring TypeScript interfaces and type safety within a React/Next.js application.
 - **Next.js Features**: Routing, pre-rendering, and optimization techniques.
 
 ## 📂 Project Structure
+
 ```plaintext
 ContactList
 |
 ├── contacts
-|   └── page.tsx
-├── [name]
-|   └── page.tsx
+|   └── [name]
+|          └── page.tsx
 ├── Data
 |   └── page.tsx
 ├── new
 |   └── page.tsx
 ├── search
 |   └── page.tsx
+├── SeedData
+|   └── contacts.ts
 ├── globals.css
 ├── layout.tsx
 └── page.tsx
+├── components
+|   └── AddContactsBar.tsx
+|   └── AddContactsButton.tsx
+|   └── AllContactsList.tsx
+|   └── Header.tsx
+|   └── SearchBar.tsx
 ```
 
 ## 🛠 How to Run the Application
@@ -87,11 +98,14 @@ To run this project locally, follow these steps:
 ## 💡 Contact Me
 
 🔗 [GitHub](https://github.com/nsLittle)  
-🔗 [LinkedIn](https://www.linkedin.com/in/mutsumihata)  
+🔗 [LinkedIn](https://www.linkedin.com/in/mutsumihata)
 
 Feel free to reach out for collaboration, job opportunities, or questions about my work!
 
 ---
 
 This **Next.js Contact List App** is a work in progress, continually evolving to enhance both functionality and user experience.
+
+```
+
 ```

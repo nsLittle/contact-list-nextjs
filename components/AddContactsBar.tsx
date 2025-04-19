@@ -1,56 +1,41 @@
+"use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function AddContactsBar({ contacts = [] }) {
-  interface Contacts {
-    name: string;
-    url: string;
-    email: string;
-    phone: string;
-  }
+type Contact = {
+  name: string;
+  url: string;
+  email: string;
+  phone: string;
+};
 
+type Props = {
+  contacts: Contact[];
+};
+
+export default function AddContactsBar({ contacts = [] }: Props) {
   const [inputName, setInputName] = useState("");
   const [inputUrl, setInputUrl] = useState("");
   const [inputEmail, setInputEmail] = useState("");
   const [inputPhone, setInputPhone] = useState("");
   const router = useRouter();
 
-  const handleInputName = (e) => {
-    setInputName(e.target.value);
-    console.log(e.target.value);
-  };
-
-  const handleInputUrl = (e) => {
-    setInputUrl(e.target.value);
-    console.log(e.target.value);
-  };
-
-  const handleInputEmail = (e) => {
-    setInputEmail(e.target.value);
-    console.log(e.target.value);
-  };
-
-  const handleInputPhone = (e) => {
-    setInputPhone(e.target.value);
-    console.log(e.target.value);
-  };
-
-  const handleClickAdd = (event) => {
-    let newContact: Contacts = {
+  const handleClickAdd = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const newContact: Contact = {
       name: inputName,
       url: inputUrl,
       email: inputEmail,
       phone: inputPhone,
     };
-    if (newContact.name === "") {
+
+    if (!newContact.name) {
       alert("Please enter a name.");
-    } else if (newContact.url === "") {
-      alert("Please enter picture url.");
-    } else if (newContact.email === "") {
+    } else if (!newContact.url) {
+      alert("Please enter a picture URL.");
+    } else if (!newContact.email) {
       alert("Please enter an email address.");
-    } else if (newContact.phone === "") {
-      alert("Pleasae enter a phone number.");
-      event.preventDefault();
+    } else if (!newContact.phone) {
+      alert("Please enter a phone number.");
     } else {
       contacts.push(newContact);
       router.push("/contacts");
@@ -58,42 +43,46 @@ export default function AddContactsBar({ contacts = [] }) {
   };
 
   return (
-    <>
-      <div className="add-contact-container">
-        <h3>Name</h3>
+    <div className="w-full px-[100px] pt-10 text-[#5a5a5a]">
+      <h2 className="text-4xl font-bold mb-6">Add New Contact</h2>
+
+      <div className="flex flex-col gap-4 max-w-md">
+        <label className="font-medium">Name</label>
         <input
-          className="input input-add"
+          className="border border-gray-300 rounded px-4 py-2"
           placeholder="Contact name"
-          onChange={handleInputName}
-        ></input>
-        <h3>Picture</h3>
+          onChange={(e) => setInputName(e.target.value)}
+        />
+
+        <label className="font-medium">Picture URL</label>
         <input
-          className="input input-add"
-          placeholder="Contact url"
-          onChange={handleInputUrl}
-        ></input>
-        <h3>Email</h3>
+          className="border border-gray-300 rounded px-4 py-2"
+          placeholder="Contact image URL"
+          onChange={(e) => setInputUrl(e.target.value)}
+        />
+
+        <label className="font-medium">Email</label>
         <input
-          className="input input-add"
+          className="border border-gray-300 rounded px-4 py-2"
           placeholder="Contact email"
-          onChange={handleInputEmail}
-        ></input>
-        <h3>Phone</h3>
+          onChange={(e) => setInputEmail(e.target.value)}
+        />
+
+        <label className="font-medium">Phone</label>
         <input
-          className="input input-add"
+          className="border border-gray-300 rounded px-4 py-2"
           placeholder="Contact phone"
-          onChange={handleInputPhone}
-        ></input>
+          onChange={(e) => setInputPhone(e.target.value)}
+        />
       </div>
 
-      <br />
-      <br />
-
-      <div className="button-submit-add-bar">
-        <button className="button button-sumit-add" onClick={handleClickAdd}>
+      <div className="mt-8">
+        <button
+          className="px-5 py-2 bg-green-200 text-[#5a5a5a] rounded hover:bg-green-300 text-sm font-medium shadow-sm transition"
+          onClick={handleClickAdd}>
           Submit
         </button>
       </div>
-    </>
+    </div>
   );
 }
