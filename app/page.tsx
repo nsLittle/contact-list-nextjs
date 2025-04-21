@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Header />
       <div className="pt-40">
-        <AllContactsList contacts={contacts} />
+        <AllContactsList />
       </div>
       <Footer />
     </>
