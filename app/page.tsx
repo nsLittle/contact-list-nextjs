@@ -8,7 +8,7 @@ import { contacts } from "@SeedData/contacts";
 export default function Home() {
   return (
     <>
-      <Header contacts={contacts} />
+      <Header />
       <div className="pt-40">
         <AllContactsList contacts={contacts} />
       </div>
