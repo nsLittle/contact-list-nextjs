@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import AddContactsButton from "./AddContactsButton";
 import SearchBar from "./SearchBar";
-
 import { useContacts } from "context/ContactsContext";
 
 export default function AllContactsList() {
