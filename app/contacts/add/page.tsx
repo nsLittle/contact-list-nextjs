@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <>
       <div className="flex justify-center">
-        <AddContactForm addContact={addContact} />
+        <AddContactForm />
       </div>
     </>
   );

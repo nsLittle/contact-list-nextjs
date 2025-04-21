@@ -37,19 +37,19 @@ export default function AllContactsList() {
             className="bg-[#fdfdfc] text-[#5a5a5a] rounded-lg shadow-md p-6 flex flex-col gap-3 hover:shadow-xl transition w-full max-w-sm w-full">
             <div className="flex items-center gap-4">
               <div className="w-[100px] h-[100px] rounded-full overflow-hidden flex items-center justify-center">
-                {/* <Image
+                <Image
                   src={contact.url}
                   alt={contact.name}
                   width={100}
                   height={100}
                   className="object-cover object-top w-[100px] h-[100px] rounded-full"
-                /> */}
+                />
 
-                <img
+                {/* <img
                   src={contact.url}
                   alt={contact.name}
                   className="w-[100px] h-[100px] object-cover rounded-full"
-                />
+                /> */}
               </div>
               <Link href={`/contacts/${contact.name}`}>
                 <div className="w-[200px] overflow-hidden">
