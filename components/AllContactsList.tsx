@@ -65,12 +65,12 @@ export default function AllContactsList() {
 
             <div className="mt-4 flex gap-4 justify-center">
               <button
-                onClick={handleEdit}
+                onClick={() => handleEdit(contact.name)}
                 className="px-3 py-1 text-sm bg-gray-200 rounded hover:bg-gray-300">
                 Edit
               </button>
               <button
-                onClick={handleDelete}
+                onClick={() => handleDelete(contact.name)}
                 className="px-3 py-1 text-sm bg-red-100 text-red-700 rounded hover:bg-red-200">
                 Delete
               </button>
