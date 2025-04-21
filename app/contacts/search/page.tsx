@@ -8,7 +8,7 @@ export default function SearchContacts() {
     <>
       <Header />
       <h2>Search Contacts</h2>
-      <SearchBar contacts={contacts} />
+      <SearchBar contacts={contacts as any} />
     </>
   );
 }
