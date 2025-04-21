@@ -12,11 +12,7 @@ type Contact = {
   phone: string;
 };
 
-type Props = {
-  contacts: Contact[];
-};
-
-export default function Header({ contacts }: Props) {
+export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-30 bg-[url('/white-brick.jpg')] bg-cover bg-center bg-no-repeat border-b border-gray-400 shadow-sm">
       {" "}
