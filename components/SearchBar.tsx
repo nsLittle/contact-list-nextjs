@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Button from "./Button";
 
 type Contact = {
   name: string;
@@ -36,19 +37,27 @@ export default function SearchBar({ contacts }: Props) {
   };
 
   return (
-    <div className="w-full px-[100px] mt-6">
-      <div className="flex gap-4 items-center mb-8">
+    <div className="w-full flex flex-col items-center">
+      <div className="flex flex-col gap-4 items-center mb-8 justify-center">
         <input
           type="text"
-          className="border border-gray-300 px-4 py-2 rounded w-[250px] text-sm text-[#5a5a5a]"
+          className="border border-gray-300 px-4 py-2 rounded w-[350px] text-sm text-[#5a5a5a]"
           placeholder="Search by name"
           onChange={handleSearchInput}
         />
-        <button
-          className="px-4 py-2 text-sm bg-gray-200 rounded hover:bg-gray-300"
+        <Button
+          label="Search"
+          onClick={handleSearchClick}
+          width="w-[150px]" // or adjust to fit nicely
+        />
+
+        {/* <button className="w-[200px] py-2 bg-gray-300 text-[#444] rounded-xl hover:bg-gray-400 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-200"> */}
+
+        {/* <button
+          className="px-4 py-2 text-base shadow-xl text-[#444] bg-gray-300 rounded-xl hover:bg-gray-300"
           onClick={handleSearchClick}>
           Search
-        </button>
+        </button> */}
       </div>
 
       <div className="flex flex-wrap gap-6">
